@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 350vh;
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(0vh);
+    transition: all 0.8s;
+    z-index: 100;
+}
+.xmasIcon img{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#icons svg{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+main img{
+    width: 100vw;
+    height: 100vh;
+}
+
+footer{
+    width: 100vw;
+    height: 70vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    
+}
+footer div{
+    gap: 10px;
+}
+#logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+}
+#contactUs{
+    display: flex;
+    flex-direction: column;
+}
+#contactUs a{
+    text-decoration: none;
+    color: white;
+}
+.mainText{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    text-align: center;
+    color: white;
+}
+
+.mainText a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.cards-contain img{
+    width: 100px;
+    height: 120px;
+    object-fit:contain;
+    z-index: 1;
+}
+.cards-contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin: 0 300px;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card{
+    border: 1px solid black ;
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+}
+.card b {
+    margin-right: 7px;   
+}
+.productButton a{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    z-index: 1;
+    position: relative;
+}
+.arrivalsContain{
+    text-align: center;
+    justify-self: center;
+}
+.productButton a:hover{
+    width: fit-content;
+    border-radius: 12px;
+    color: white;
+    padding: 7px;
+}
+.arrivalsContain span{
+    position: absolute;
+    top: 820px;
+    left: 600px;
+    width: 105px;
+    height: 30px;
+    background: linear-gradient(45deg, rgb(236, 122, 39), rgb(111, 98, 98)) ;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.arrivalsContain a:nth-child(1):hover~span{
+    width: 105px;
+    left: 600px;
+}
+.arrivalsContain a:nth-child(2):hover~span{
+    width: 120px;
+    left: 705px;
+}
+.arrivalsContain a:nth-child(3):hover~span{
+    width: 100px;
+    left: 825px;
+  
+}
+#postal img{
+     width: 300px;
+     height: 400px;
+     object-fit: cover;
+    position: s;
+}
+#postal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#postalCard1{
+    margin-left: 50px;
+    position: relative;
+}
+#postalCard2{
+    position: relative;
+}
+#postalCard3{
+    position: relative;
+}
+#postalCard4{
+    position: relative;
+}
+#postal marquee{
+    border-radius: 10px;
+    color: blue;
+    position: absolute;
+    width: 220px;
+    left: 40px;
+    bottom: 10px;
+    z-index: 1;
+}
+#scrollCards{
+    display: flex;
+    gap: 40px;
+}
+.cardsblock1 img{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
+.cardsblock2 img{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
+.cardsblock3 img{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
+.cardsblock4 img{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
+.cardsblock5 img{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+}
+.cardsblock5 {
+    display: none;
+    transition: all 1s;
+}
+.cardsblock1{
+    display: block;
+    transition: all 1s;
+}
+#boxForMe{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url(https://png.pngtree.com/thumb_back/fw800/background/20240408/pngtree-christmas-santa-claus-with-suitcases-at-his-home-christmas-new-year-image_15650542.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#myBox{
+    padding-top:100px;
+    padding-bottom: 200px;
+    position: sticky;
+    text-align: center;
+    left: 50%;
+    top: 200px;
+    filter: none;
+}
+#myBox img{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+}
+#myBox h3{
+    color: yellow;
+    font-weight: 800;
+}
+#myBox p{
+    color:white;
+}
+#myBox h4{
+    color: white;
+}
+
+#clock{
+    position: relative;
+    width: 100vw;
+    background-position: center center;
+}
+
+.content{
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    justify-items: center;
+    align-content: center   ;
+    color: white;
+}
+#clock h1{
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    font-weight: normal;
+    font-size: 60px;
+    color: white;
+}
+.content{
+    position: absolute;
+    top: 90%;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    transform: scale(2);
+}
+#clock img{
+    position: relative;
+}
